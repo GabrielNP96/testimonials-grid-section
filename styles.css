@@ -12,8 +12,8 @@ body{
     display: grid;
     padding: 10% 5%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 2vh;
 }
 
@@ -26,7 +26,22 @@ img {
     border-radius: 100%;
 }
 
-.five {
+.one {
     grid-row: 1;
-    grid-column: 3;
+    grid-column: span 2;
+}
+
+.three {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 2;
+    grid-row: 2 / span 2fr;
+}
+
+.five {
+    grid-column: 4;
+    grid-row: 1;
 }
